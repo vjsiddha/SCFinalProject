@@ -1,0 +1,4 @@
+gurobipy
+pandas
+networkx
+matplotlib
