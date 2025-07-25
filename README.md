@@ -1,6 +1,6 @@
 # MSCI434-FinalProject
 
-# 🚆 Train Blocking Optimization — MSCI 434 Final Project
+# Train Blocking Optimization — MSCI 434 Final Project
 
 This project implements and extends a two-stage optimization model for **joint train blocking and shipment path planning**, replicating the methodology presented in the research paper _"Joint Optimization of Train Blocking and Shipment Path"_.
 
@@ -8,7 +8,7 @@ Developed for the **MSCI 434: Decision Models in Supply Chain Management** cours
 
 ---
 
-## ✅ Project Objectives
+## Project Objectives
 
 - Replicate the two-stage optimization model from a published journal paper.
 - Use Gurobi to solve both the **shipment path** and **train blocking** subproblems.
@@ -19,7 +19,7 @@ Developed for the **MSCI 434: Decision Models in Supply Chain Management** cours
 
 ---
 
-## 🧩 Problem Overview
+## Problem Overview
 
 ### 1. **Shipment Path Model**
 - **Goal:** Determine optimal shipment paths for OD pairs that minimize total car-kilometers.
@@ -35,7 +35,7 @@ Developed for the **MSCI 434: Decision Models in Supply Chain Management** cours
 
 ---
 
-## 🔁 Extensions Implemented
+## Extensions Implemented
 
 ### 1. **Initial Feasible Solution (Warm Start)**
 - After solving the blocking model once, a feasible solution is extracted and used to warm-start Gurobi.
@@ -49,7 +49,7 @@ Developed for the **MSCI 434: Decision Models in Supply Chain Management** cours
 
 ---
 
-## 📊 Experiments
+## Experiments
 
 - Conducted **20 randomized trials**, varying OD demands using a Gaussian perturbation.
 - For each trial:
@@ -63,7 +63,7 @@ Developed for the **MSCI 434: Decision Models in Supply Chain Management** cours
 
 ---
 
-## 🧪 How It Was Achieved
+## How It Was Achieved
 
 - All optimization models were built and solved using **Python and Gurobi**.
 - Data was loaded from Excel and converted into a graph using **NetworkX**.
@@ -73,7 +73,7 @@ Developed for the **MSCI 434: Decision Models in Supply Chain Management** cours
 
 ---
 
-## 📁 Key Outputs
+## Key Outputs
 
 - `top_yard_usage.csv`: Yards most frequently chosen as classification points.
 - `top_shipment_paths.csv`: Common shipment routing paths across top trials.
